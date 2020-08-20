@@ -1,0 +1,28 @@
+﻿@model DiplomadoMVC_Crud_HTML_Helps_NoTipados.Models.Productos
+    @{
+        Layout = null;
+    }
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+    </head>
+    <body>
+        <div>
+
+            @{ Html.BeginForm(); }
+            <p>
+                Buscar por Código:
+                @Html.TextBox("Codigo")
+            </p>
+            <p>
+                <input type="submit" value="Buscar" />
+            </p>
+            @{ Html.EndForm();}
+        </div>
+        <a href="/Home/Grabar">Agregar</a>
+    </body>
+</html>
